@@ -1,0 +1,83 @@
+/*border na tie čiary hore*/
+/*skúsiť unit ch na odstavce*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: LeagueSpartan;
+}
+@font-face {
+    font-family: LeagueSpartan;
+    src: url(fonts/LeagueSpartan-Regular.ttf);
+}
+:root{
+    --back: hsl(26, 40%, 92%);
+}
+
+/*mobile version samsung galaxy s20 ultra*/ /*pridaj font a asi sprav vo figme náčrt*/
+
+/*head*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+header h1{
+    font-size: 1.5rem;
+}
+header p{
+    max-width: 73%;
+    text-align: justify;
+}
+.first_heading{
+    font-weight: normal;
+}
+
+/*body*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cards{
+    padding: 1.5rem; /*skúsiť toto s flexboxom, to je asi lepšie riešenie*/
+    margin: 1.5rem;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.12); /*prve = doprava dolava, druhe = hore dole, tretie = blur radius*/
+    border-radius: 6px;
+    max-width: 44ch; /*toto ešte poriešiť, ale ch sa oplatilo použiť*/
+    min-height: 27vh; /*problém s tým, že sa to naťahuje donekonečna*/
+    overflow: hidden; /*zabráni aby ikony išli von z karty, aj toto skúsiť s flexboxom*/
+}
+.info_text{
+    padding-top: 0.4rem;
+    padding-bottom: 3.5rem;
+}
+.icon{
+    float: right;
+}
+#supervisor{
+    border: 4px #43D3D3;
+    border-style: solid none none none; /*prvý = hore, druhý = napravo, tretí = dole, štvrtý = naľavo*/
+}
+#team_builder{
+    border: 4px #EC5355;
+    border-style: solid none none none;
+}
+#karma{
+    border: 4px #FBAD4B;
+    border-style: solid none none none;
+}
+#calculator{
+    border: 4px #559EEB;
+    border-style: solid none none none;
+}
+
+/*footer*/
+footer{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+.meno{
+    align-self: flex-end;
+}
